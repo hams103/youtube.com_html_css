@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+</head>
+<body style="padding-bottom: 1000px;">
+
+
+  <!-- DIV style 1 -->
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;
+  ">
+    <div style="background-color: lightblue;">div 1</div> <!-- DIV-1 -->
+    <div style="background-color: lightpink;">div 2 <p>text</p> </div> <!-- DIV-2 -->
+  </div>
+
+
+
+    <!-- DIV style 2 -->
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;
+  ">
+    <div style="background-color:
+     lightblue;">100px</div> <!-- DIV-1 -->
+    <div style="background-color:
+     lightpink;">100px<p>text</p> </div> <!-- DIV-2 -->
+    <div style="background-color:
+     lightgreen;">200px</div> <!-- DIV-3 -->
+    <div style="background-color:
+     lightpink;">100px</div> <!-- DIV-4 -->
+  </div>
+
+
+
+    <!-- DIV style 3 -->
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    ">
+      <div style="background-color:
+       lightblue;">100px</div> <!-- DIV-1 -->
+      <div style="background-color:
+       lightpink;">100px</div> <!-- DIV-2 -->
+  </div>
+
+
+      <!-- DIV style 4 -->
+      <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;
+    ">
+      <div style="background-color:
+       lightblue;">100px</div> <!-- DIV-1 -->
+      <div style="background-color:
+       lightpink;">100px</div> <!-- DIV-2 -->
+       <div style="background-color:
+        lightgreen;">200px</div> <!-- DIV-3 -->
+  </div>
+
+
+
+        <!-- DIV style 5 -->
+        <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+      ">
+        <div style="background-color:
+         lightblue; height: 200px;">1fr</div> <!-- DIV-1 -->
+        <div style="background-color:
+         lightpink; height: 200px;">1fr</div> <!-- DIV-2 -->
+         <div style="background-color:
+          lightgreen; height: 200px;">1fr</div> <!-- DIV-3 -->
+
+          <div style="background-color:
+         lightpink; height: 200px;">1fr</div> <!-- DIV-4 -->
+        <div style="background-color:
+         lightblue; height: 200px;">1fr</div> <!-- DIV-5 -->
+         <div style="background-color:
+          lightyellow; height: 200px;">1fr</div> <!-- DIV-6 -->
+          
+          
+    </div>
+
+
+
+
+</body>
+</html>

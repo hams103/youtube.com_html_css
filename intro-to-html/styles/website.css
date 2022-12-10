@@ -1,0 +1,32 @@
+:root{
+--ff-primary: #593c36;
+--ff-primary-light: $primary * 1.1;
+--ff-secondary: #25c7d9;
+--ff-secondary-light: $secondary * 0.8;
+--ff-third: #d9a59a; 
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.paragraph-1{
+    margin-right: 0px;
+}
+
+.button-1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.link-1{
+    margin-left: 0px;
+}
+
+
+

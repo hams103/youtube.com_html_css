@@ -1,0 +1,125 @@
+:root{
+  --clr-primary: black;
+  --ff-1: "Arial";
+  --ff-2: "Roboto", "Arial"; /* Main-font: Roboto. Backup-font: Arial. */
+}
+
+
+
+/* Entire Container. */
+.video-preview{
+ margin-top: 0px;
+ margin-bottom: 0px;
+}
+
+
+
+/* 1 ------------------------------------------- */
+/* DIV for thumbnail picture */
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+}
+/* thumbnail picture */
+.thumbnail{
+  width: 100%;  /* takes up 100% of space in thumbnail container(div) */ 
+}
+
+
+
+
+/*GRID (BOTH channel picture & video info)------------------------------------------- */
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr ;
+}
+
+
+
+/* 2 ------------------------------------------- */
+/* DIV for channel picture. */
+.channel-picture{
+  display: inline-block; /* stands next to each other */
+  width: 36px;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* channel picture. */
+.profile-picture{
+  width: 100%;
+  border-radius: 40px;
+}
+
+
+
+/* 3 --------------------------------------------------- */
+/* DIV for title, author, stats. */
+.video-info{  
+  display: inline-block;
+  width: 200px;
+  margin-left: 10px;
+}
+.video-title{
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 500; /* Roboto-500 */
+  line-height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+/*   width: 120%; */
+}
+.video-author,
+.video-stats{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+.video-author{
+  margin-bottom: 4px;
+  cursor: pointer;
+
+}
+
+
+/* --------------------------------------------------- */
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+/*   text-decoration: underline;
+  border: 2px solid red; */
+}
+
+@media (max-width: 800px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1049px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1050px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Video Time --------------------------------- */
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 12px;
+  right: 7px;
+
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}

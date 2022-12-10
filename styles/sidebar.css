@@ -1,0 +1,48 @@
+:root{
+  --clr-primary: black;
+  --ff-1: "Arial";
+  --ff-2: "Roboto", "Arial"; /* Main-font: Roboto. Backup-font: Arial. */
+}
+
+
+/* SIDEBAR ------------------------------------------------------- */
+/* Full Sidebar. */
+.sidebar{
+  background-color: white;
+  color: var(--clr-primary);
+
+  position: fixed;
+  top: 55px;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgb(221, 221, 221);
+  z-index: 200; /* Prioritzes Sidebar over Header. */
+  padding-top: 5px; /* Pushes sidebar 5px down. */
+}
+
+/* 6 boxes withing the Sidebar. */
+.sidebar-link{
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar-link:hover{
+  background-color: rgb(241, 241, 241);
+  cursor: pointer;
+}
+
+.sidebar-link img{ /* Styling images within each 6 boxes. */
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div{ /* Styling text withing each 6 boxes. */
+  font-size: 10px;
+}
